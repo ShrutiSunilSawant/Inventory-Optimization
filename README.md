@@ -128,6 +128,7 @@ This project supports multiple datasets. Place one or more of the following file
 - `supply_chain_dataset.csv`
 - `inventory_management_data.csv`
 - `supply_chain_analysis.csv`
+> 📁 Note: All datasets are fictional and sanitized — no real customer or business data is included.
 
 The script automatically selects the first available dataset.
 
