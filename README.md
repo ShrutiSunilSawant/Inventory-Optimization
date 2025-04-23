@@ -1,6 +1,5 @@
 # Inventory-Optimization
 
-
 📦 Inventory Optimization
 
 This project leverages data analytics and time-series forecasting techniques to analyze and optimize inventory levels. The goal is to ensure that the right products are available at the right time—minimizing stockouts and excess inventory.
@@ -45,6 +44,7 @@ In today's fast-paced retail and supply chain environments, managing inventory e
 
 ## 📂 Project Structure
 
+```
 inventory_optimization_project/
 │
 ├── data/
@@ -53,9 +53,6 @@ inventory_optimization_project/
 │   ├── supply_chain_analysis.csv
 │   ├── cleaned_inventory_data.csv
 │   └── optimized_inventory.csv
-│
-├── models/
-│   └── demand_forecast_model.pkl
 │
 ├── reports/
 │   └── inventory_dashboard_data.csv
@@ -71,6 +68,7 @@ inventory_optimization_project/
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
 
 ## 🛠 Installation
 
@@ -78,7 +76,9 @@ inventory_optimization_project/
 
 Ensure you have Python installed (preferably Python 3.8 or higher). Then run:
 
+```bash
 pip install -r requirements.txt
+```
 
 The required libraries are:
 - `pandas`
@@ -95,13 +95,24 @@ The required libraries are:
 
 Execute the main script to run all stages sequentially:
 
+```bash
 python main.py
+```
 
 The pipeline performs:
 - Data preprocessing
 - Demand forecasting (if enough data is available)
 - Inventory optimization
 - Data export for Tableau
+
+### 🔄 Model File
+
+The ARIMA demand forecasting model (`demand_forecast_model.pkl`) is not included in this repository.  
+It will be **automatically created** and saved to the `/models/` folder when you run:
+
+```bash
+python scripts/demand_forecasting.py
+```
 
 ### **View the Tableau Dashboard**
 
@@ -125,6 +136,7 @@ The script automatically selects the first available dataset.
 - **Improve Forecasting:** Enhance the ARIMA model or explore alternative models (e.g., LSTM) for better demand forecasting.
 - **Real-time Data Integration:** Connect to a live database for real-time inventory monitoring.
 - **Web Dashboard:** Develop a Flask or Django web application for interactive inventory management.
+
 ---
 
 💡 **Feel free to contribute, suggest improvements, or reach out for any questions!**
